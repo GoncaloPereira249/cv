@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gonçalo Pereira | Geógrafo, SIG e Ordenamento do Território</title>
+  <meta name="description" content="Currículo de Gonçalo Pereira, geógrafo e estudante do Mestrado em Sistemas de Informação Geográfica e Ordenamento do Território da Universidade do Porto.">
+  <link rel="icon" href="imagens/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&amp;display=swap">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <a class="saltar" href="#conteudo">Saltar para o conteúdo</a>
+
+  <!-- Barra do topo e menu: iguais em todas as páginas -->
+  <header class="barra">
+    <div class="contentor">
+      <a class="marca" href="index.html">Gonçalo Pereira</a>
+      <nav aria-label="Páginas do site">
+        <ul class="menu">
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="trabalhos.html">Trabalhos</a></li>
+          <li><a href="competencias.html">Competências</a></li>
+          <li><a href="experiencia.html">Experiência</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- Relevo interativo: as curvas de nível são desenhadas no canvas por js/relevo.js -->
+    <header class="heroi">
+      <canvas id="relevo" aria-hidden="true"></canvas>
+      <div class="contentor">
+        <p class="funcao">Geógrafo, SIG e Ordenamento do Território</p>
+        <h1>Gonçalo<br>Pereira</h1>
+        <p class="introducao">Da recolha dos dados ao mapa final. Análise espacial, geomorfologia e ordenamento do território, no Porto.</p>
+        <div class="botoes">
+          <a class="botao cheio" href="documentos/CV_GoncaloPereira.pdf" download>Descarregar CV (PDF)</a>
+          <a class="botao" href="mailto:goncaloap249@gmail.com">Enviar email</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="contentor seccoes">
+      <section aria-labelledby="titulo-sobre-mim">
+        <h2 id="titulo-sobre-mim">Sobre mim</h2>
+        <div class="perfil">
+          <img class="retrato" src="imagens/foto.jpg" width="250" height="250" alt="Fotografia de Gonçalo Pereira">
+          <div>
+            <p>Interessa-me perceber de que forma o território condiciona a vida das pessoas, seja na maneira como as cidades crescem, seja na exposição de uma população a cheias ou a outros riscos naturais. Foi esse interesse que me levou à Geografia. Na licenciatura comecei a trabalhar com Sistemas de Informação Geográfica e foi aí que encontrei a área em que queria continuar: uma forma de trabalhar que junta a tecnologia ao conhecimento do terreno.</p>
+            <p>No mestrado tenho trabalhado sobretudo em análise espacial, geomorfologia e ordenamento do território, com ArcGIS Pro, QGIS e Python. Procuro acompanhar cada trabalho do início ao fim: reunir e tratar os dados, analisá-los e transformá-los em cartografia que ajude a compreender um problema e a fundamentar decisões sobre o território.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resumo em cartões: cada par termo e descrição fica dentro de um div -->
+      <section aria-labelledby="titulo-resumo">
+        <h2 id="titulo-resumo">Em resumo</h2>
+        <dl class="resumo">
+          <div class="cartao">
+            <dt><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-4 9 4-9 4-9-4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/><path d="M21 9v5"/></svg>Formação</dt>
+            <dd>Mestrado em SIG e Ordenamento do Território, FLUP (em curso). Licenciatura em Geografia, FLUP.</dd>
+          </div>
+          <div class="cartao">
+            <dt><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l9 5-9 5-9-5 9-5z"/><path d="M3 14l9 5 9-5"/></svg>Ferramentas</dt>
+            <dd>ArcGIS Pro, QGIS, Python (GeoPandas), SQL e AutoCAD (noções básicas).</dd>
+          </div>
+          <div class="cartao">
+            <dt><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><circle cx="9" cy="14" r="1.6"/><circle cx="13" cy="10" r="1.6"/><circle cx="17.5" cy="7" r="1.6"/></svg>Métodos</dt>
+            <dd>Estatística espacial (KDE, Moran, LISA, Getis-Ord, OLS), modelação de terreno e de risco (TWI, SHALSTAB, DSAS) e dados LiDAR.</dd>
+          </div>
+          <div class="cartao">
+            <dt><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v10H10l-5 4V5z"/></svg>Línguas</dt>
+            <dd>Português (língua materna) e inglês (B2).</dd>
+          </div>
+          <div class="cartao">
+            <dt><svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 15v-4l2-5h10l2 5v4"/><path d="M3 15h18"/><circle cx="7.5" cy="17.5" r="1.6"/><circle cx="16.5" cy="17.5" r="1.6"/></svg>Carta de condução</dt>
+            <dd>Categoria B.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- As outras páginas, cada uma num cartão: o cartão inteiro é a ligação -->
+      <section aria-labelledby="titulo-indice">
+        <h2 id="titulo-indice">Neste site</h2>
+        <ul class="cartoes">
+          <li>
+            <a class="cartao cartao-ligacao" href="trabalhos.html">
+              <h3>Trabalhos</h3>
+              <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            </a>
+          </li>
+          <li>
+            <a class="cartao cartao-ligacao" href="competencias.html">
+              <h3>Competências</h3>
+              <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            </a>
+          </li>
+          <li>
+            <a class="cartao cartao-ligacao" href="experiencia.html">
+              <h3>Experiência</h3>
+              <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- Rodapé com os contactos: igual em todas as páginas -->
+  <footer class="rodape">
+    <div class="contentor">
+      <address>
+        <strong>Gonçalo Pereira</strong>, Paranhos, Porto<br>
+        <a href="mailto:goncaloap249@gmail.com">goncaloap249@gmail.com</a>
+      </address>
+    </div>
+  </footer>
+
+  <script src="js/relevo.js"></script>
+</body>
+</html>
