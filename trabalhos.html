@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trabalhos | Gonçalo Pereira</title>
+  <meta name="description" content="Trabalhos académicos de Gonçalo Pereira no Mestrado em SIG e Ordenamento do Território, contados num mapa que acompanha a leitura.">
+  <link rel="icon" href="imagens/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&amp;display=swap">
+  <!-- Leaflet: biblioteca do mapa interativo -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <a class="saltar" href="#conteudo">Saltar para o conteúdo</a>
+
+  <!-- Barra do topo e menu: iguais em todas as páginas -->
+  <header class="barra">
+    <div class="contentor">
+      <a class="marca" href="index.html">Gonçalo Pereira</a>
+      <nav aria-label="Páginas do site">
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="trabalhos.html" aria-current="page">Trabalhos</a></li>
+          <li><a href="competencias.html">Competências</a></li>
+          <li><a href="experiencia.html">Experiência</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <header class="cabecalho-pagina">
+      <div class="contentor">
+        <h1>Trabalhos</h1>
+        <p class="introducao">Trabalhos do mestrado em SIG e Ordenamento do Território. Ao descer a página, o mapa acompanha cada trabalho até à sua área de estudo, e os mapas abrem em ecrã inteiro.</p>
+      </div>
+    </header>
+
+    <!-- Story map: o texto à esquerda e o mapa fixo à direita (js/mapa.js) -->
+    <div class="historia">
+      <div class="historia-texto">
+        <section class="passo" data-passo="geral" aria-labelledby="titulo-geral">
+          <h2 id="titulo-geral">Onde ficam as áreas de estudo</h2>
+          <p>Três trabalhos no Norte de Portugal e um em Filadélfia, nos Estados Unidos. Carregue num ponto do mapa para saber de que trabalho é.</p>
+          <ul class="legenda">
+            <li class="tema-paredes"><a href="#paredes">Aquisição e análise de dados geográficos em Paredes</a></li>
+            <li class="tema-riscos"><a href="#riscos">Risco geomorfológico no Norte de Portugal</a></li>
+            <li class="tema-crime"><a href="#criminalidade">Criminalidade violenta em Filadélfia</a></li>
+            <li class="tema-python"><a href="#python">Automação de análise espacial em Python</a></li>
+          </ul>
+        </section>
+
+        <!-- Trabalho 1 -->
+        <article class="passo" id="paredes" data-passo="paredes" aria-labelledby="titulo-paredes">
+          <h2 id="titulo-paredes">Aquisição e análise de dados geográficos em Paredes</h2>
+          <dl class="ficha">
+            <dt>Unidade curricular</dt>
+            <dd>Aquisição e Edição de Dados Geográficos</dd>
+            <dt>Área de estudo</dt>
+            <dd>Sobrosa e Louredo, concelho de Paredes</dd>
+            <dt>Dados</dt>
+            <dd>Ortofotos, dados LiDAR e nomenclatura da COS2018</dd>
+          </dl>
+          <p>Fotointerpretação e vetorização da ocupação do solo, segundo a nomenclatura da COS2018, e da rede viária. Com os dados LiDAR fiz a modelação morfológica do terreno: hipsometria com perfil topográfico, declives, exposição das vertentes, sombreamento e um modelo tridimensional.</p>
+          <div class="galeria">
+            <figure class="panoramica">
+              <a class="moldura" href="imagens/trabalhos/paredes-ocupacao-solo.jpg" target="_blank">
+                <img src="imagens/trabalhos/miniaturas/paredes-ocupacao-solo.jpg" width="480" height="339" loading="lazy" alt="Mapa de ocupação do solo da área de estudo em Paredes, com as classes da COS2018">
+              </a>
+              <figcaption>Ocupação do solo segundo a nomenclatura da COS2018.</figcaption>
+            </figure>
+            <figure>
+              <a class="moldura" href="imagens/trabalhos/paredes-hipsometria.jpg" target="_blank">
+                <img src="imagens/trabalhos/miniaturas/paredes-hipsometria.jpg" width="422" height="600" loading="lazy" alt="Mapa hipsométrico da área de estudo em Paredes, com a linha do perfil topográfico">
+              </a>
+              <figcaption>Hipsometria com perfil topográfico.</figcaption>
+            </figure>
+            <figure>
+              <a class="moldura" href="imagens/trabalhos/paredes-sombreamento.jpg" target="_blank">
+                <img src="imagens/trabalhos/miniaturas/paredes-sombreamento.jpg" width="468" height="600" loading="lazy" alt="Mapa de sombreamento das vertentes da área de estudo em Paredes">
+              </a>
+              <figcaption>Sombreamento das vertentes.</figcaption>
+            </figure>
+            <figure>
+              <a class="moldura" href="imagens/trabalhos/paredes-exposicao.jpg" target="_blank">
+                <img src="imagens/trabalhos/miniaturas/paredes-exposicao.jpg" width="471" height="600" loading="lazy" alt="Mapa de exposição das vertentes em oito classes, da área de estudo em Paredes">
+              </a>
+              <figcaption>Exposição das vertentes em oito classes.</figcaption>
+            </figure>
+            <figure>
+              <a class="moldura" href="imagens/trabalhos/paredes-modelo-3d.jpg" target="_blank">
+                <img src="imagens/trabalhos/miniaturas/paredes-modelo-3d.jpg" width="480" height="327" loading="lazy" alt="Representação tridimensional do terreno da área de estudo em Paredes">
+              </a>
+              <figcaption>Modelo tridimensional do terreno.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- Trabalho 2 -->
+        <article class="passo" id="riscos" data-passo="riscos" aria-labelledby="titulo-riscos">
+          <h2 id="titulo-riscos">Risco geomorfológico no Norte de Portugal</h2>
+          <dl class="ficha">
+            <dt>Unidade curricular</dt>
+            <dd>Geomorfologia e Ordenamento do Território</dd>
+            <dt>Áreas de estudo</dt>
+            <dd>Rio Febros em Avintes (Vila Nova de Gaia), Resende e Mindelo (Vila do Conde)</dd>
+            <dt>Ferramentas</dt>
+            <dd>ArcGIS Pro, dados LiDAR, sistema ETRS89 PT-TM06</dd>
+          </dl>
+          <p>Análise de três ocorrências geomorfológicas ligadas a tempestades: uma cheia rápida no rio Febros, um fluxo de detritos em Resende e a erosão costeira na Reserva Ornitológica de Mindelo. Para a cheia usei modelação hidrológica e cruzei a mancha de inundação com o edificado. Nas vertentes de Resende aplicei o modelo SHALSTAB à suscetibilidade a deslizamentos superficiais e modelei a trajetória do fluxo de detritos. No litoral, comparei as linhas de costa de 2010 e 2023 com o DSAS e cartografei a área de galgamento.</p>
+          <div class="galeria">
+            <figure>
+              <a class="moldura" href="imagens/trabalhos/febros-hipsometria.jpg" target="_blank">
+                <img src="imagens/trabalhos/miniaturas/febros-hipsometria.jpg" width="458" height="600" loading="lazy" alt="Mapa hipsométrico do vale encaixado do rio Febros, em Avintes">
+              </a>
+              <figcaption>Rio Febros: hipsometria do vale encaixado.</figcaption>
+            </figure>
+            <figure>
+              <a class="moldura" href="imagens/trabalhos/febros-inundacao.jpg" target="_blank">
+                <img src="imagens/trabalhos/miniaturas/febros-inundacao.jpg" width="468" height="600" loading="lazy" alt="Mancha de inundação do rio Febros com os edifícios inundados e não afetados">
+              </a>
+              <figcaption>Rio Febros: mancha de inundação e edifícios expostos.</figcaption>
+            </figure>
+            <figure>
+              <a class="moldura" href="imagens/trabalhos/resende-fluxo-detritos.jpg" target="_blank">
+                <img src="imagens/trabalhos/miniaturas/resende-fluxo-detritos.jpg" width="424" height="600" loading="lazy" alt="Mapa de declives com a trajetória modelada do fluxo de detritos em Resende">
+              </a>
+              <figcaption>Resende: declives e trajetória do fluxo de detritos.</figcaption>
+            </figure>
+            <figure>
+              <a class="moldura" href="imagens/trabalhos/resende-shalstab.jpg" target="_blank">
+                <img src="imagens/trabalhos/miniaturas/resende-shalstab.jpg" width="424" height="600" loading="lazy" alt="Modelo SHALSTAB de suscetibilidade a deslizamentos superficiais em Resende">
+              </a>
+              <figcaption>Resende: suscetibilidade a deslizamentos (SHALSTAB).</figcaption>
+            </figure>
+            <figure>
+              <a class="moldura" href="imagens/trabalhos/mindelo-galgamento.jpg" target="_blank">
+                <img src="imagens/trabalhos/miniaturas/mindelo-galgamento.jpg" width="424" height="600" loading="lazy" alt="Mapa hipsométrico do cordão dunar de Mindelo com a mancha de galgamento costeiro">
+              </a>
+              <figcaption>Mindelo: hipsometria dunar e galgamento costeiro.</figcaption>
+            </figure>
+            <figure>
+              <a class="moldura" href="imagens/trabalhos/mindelo-linha-costa.jpg" target="_blank">
+                <img src="imagens/trabalhos/miniaturas/mindelo-linha-costa.jpg" width="424" height="600" loading="lazy" alt="Comparação das linhas de costa de 2010 e 2023 em Mindelo">
+              </a>
+              <figcaption>Mindelo: linhas de costa de 2010 e 2023.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- Trabalho 3 -->
+        <article class="passo" id="criminalidade" data-passo="criminalidade" aria-labelledby="titulo-criminalidade">
+          <h2 id="titulo-criminalidade">Padrões espaciais da criminalidade violenta em Filadélfia</h2>
+          <dl class="ficha">
+            <dt>Unidade curricular</dt>
+            <dd>Análise Espacial aplicada ao Ordenamento do Território</dd>
+            <dt>Área de estudo</dt>
+            <dd>Filadélfia, Estados Unidos (crimes de 2021)</dd>
+            <dt>Dados</dt>
+            <dd>OpenDataPhilly e American Community Survey, por setor censitário</dd>
+            <dt>Tipo</dt>
+            <dd>Trabalho de grupo</dd>
+          </dl>
+          <p>Distribuição da criminalidade violenta e a sua relação com variáveis demográficas, lida por setor censitário e pelos 18 distritos de planeamento da cidade. A minha parte foi a estatística espacial descritiva, a densidade de kernel, a análise de clusters e outliers com o Índice Local de Moran, a análise de hot spots com a estatística Getis-Ord Gi* e a acessibilidade às esquadras de polícia, com polígonos de Thiessen e áreas de serviço sobre a rede viária. O trabalho incluiu ainda uma regressão OLS.</p>
+          <div class="galeria">
+            <figure>
+              <a class="moldura" href="imagens/trabalhos/filadelfia-kde.jpg" target="_blank">
+                <img src="imagens/trabalhos/miniaturas/filadelfia-kde.jpg" width="424" height="600" loading="lazy" alt="Superfície de densidade de kernel da criminalidade violenta em Filadélfia">
+              </a>
+              <figcaption>Densidade de kernel (KDE).</figcaption>
+            </figure>
+            <figure>
+              <a class="moldura" href="imagens/trabalhos/filadelfia-clusters.jpg" target="_blank">
+                <img src="imagens/trabalhos/miniaturas/filadelfia-clusters.jpg" width="424" height="600" loading="lazy" alt="Mapa de clusters e outliers pelo Índice Local de Moran em Filadélfia">
+              </a>
+              <figcaption>Clusters e outliers (Índice Local de Moran).</figcaption>
+            </figure>
+            <figure>
+              <a class="moldura" href="imagens/trabalhos/filadelfia-hot-spots.jpg" target="_blank">
+                <img src="imagens/trabalhos/miniaturas/filadelfia-hot-spots.jpg" width="424" height="600" loading="lazy" alt="Mapa de hot spots e cold spots pela estatística Getis-Ord Gi* em Filadélfia">
+              </a>
+              <figcaption>Hot spots (Getis-Ord Gi*).</figcaption>
+            </figure>
+            <figure>
+              <a class="moldura" href="imagens/trabalhos/filadelfia-areas-servico.jpg" target="_blank">
+                <img src="imagens/trabalhos/miniaturas/filadelfia-areas-servico.jpg" width="424" height="600" loading="lazy" alt="Áreas de serviço das esquadras de polícia de Filadélfia, por tempo de deslocação na rede viária">
+              </a>
+              <figcaption>Áreas de serviço das esquadras de polícia.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- Trabalho 4 -->
+        <article class="passo" id="python" data-passo="python" aria-labelledby="titulo-python">
+          <h2 id="titulo-python">Automação de análise espacial em Python</h2>
+          <dl class="ficha">
+            <dt>Unidade curricular</dt>
+            <dd>Programação SIG e OT</dd>
+            <dt>Área de estudo</dt>
+            <dd>Porto (Alojamento Local)</dd>
+            <dt>Ferramentas</dt>
+            <dd>Python, GeoPandas e matplotlib</dd>
+            <dt>Tipo</dt>
+            <dd>Trabalho de grupo</dd>
+          </dl>
+          <p>Biblioteca em Python para a análise espacial do Alojamento Local no Porto, com dados de fontes abertas. O programa automatiza operações espaciais com GeoPandas, como buffer, intersect e dissolve, e produz sete mapas temáticos com matplotlib, com a escala e a orientação colocadas automaticamente em cada mapa.</p>
+          <ol class="etapas" aria-label="Etapas do programa">
+            <li><strong>Carregar</strong> <span>os dados de fontes abertas</span></li>
+            <li><strong>Limpar</strong> <span>os registos e as geometrias</span></li>
+            <li><strong>Processar</strong> <span>as operações espaciais</span></li>
+            <li><strong>Exportar</strong> <span>os resultados e os mapas</span></li>
+          </ol>
+        </article>
+      </div>
+
+      <div class="historia-mapa">
+        <div id="mapa" role="region" aria-label="Mapa interativo das áreas de estudo"></div>
+        <noscript><p class="nota">O mapa interativo precisa de JavaScript.</p></noscript>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé com os contactos: igual em todas as páginas -->
+  <footer class="rodape">
+    <div class="contentor">
+      <address>
+        <strong>Gonçalo Pereira</strong>, Paranhos, Porto<br>
+        <a href="mailto:goncaloap249@gmail.com">goncaloap249@gmail.com</a>
+      </address>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/mapa.js"></script>
+  <script src="js/visualizador.js"></script>
+</body>
+</html>
